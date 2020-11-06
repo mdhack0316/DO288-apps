@@ -11,16 +11,14 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-cp -Rf /tmp/src/*.html ./
-cp -Rf /tmp/src/*.html ./
 
-echo "--->  Creating data page"
-DATE=`date "+%F"`
-echo "Today's date Dubai is $DATE" >> datee.html
+cp Rf /tmp/src/*.html ./
 
-echo "---> Creating info page"
-DATE=`date "+%F"`
-echo "Mayank Modi Todays Date is $DATE" >> ./date.html
+echo "--> date customisation
+DATE=`date +%F`
+echo " date is changed to $DATE " > ./info.html
+
+
 ######## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
