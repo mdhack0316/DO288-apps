@@ -12,7 +12,11 @@ config_s2i
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/*.html ./
 
+echo "--->  Creating data page"
+DATE=`date "+%F"`
+echo "Today's date Dubai is $DATE" >> datee.html
 
 echo "---> Creating info page"
 DATE=`date "+%F"`
