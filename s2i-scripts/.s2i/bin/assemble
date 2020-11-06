@@ -14,7 +14,7 @@ echo "---> Installing application source"
 
 cp -Rf /tmp/src/*.html ./
 
-echo "--> date customisation
+echo "--> date customisation"
 DATE=`date +%F`
 echo " date is changed to $DATE " > ./info.html
 
