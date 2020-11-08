@@ -9,14 +9,12 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
+cp -rf/tmp/src/*.html ./
 
-echo "---> Installing application source"
-
-cp -Rf /tmp/src/*.html ./
-
-echo "--> date customisation"
-DATE=`date +%F`
-echo " date is changed to $DATE " > ./info.html
+echo "---> changing teh date format"
+DATE=`date="+%F"`
+echo "---> creatingteh exam date html"
+echo "---> date from Dubai is $DATE" >>./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
