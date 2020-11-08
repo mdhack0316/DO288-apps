@@ -14,7 +14,7 @@ cp -rf /tmp/src/*.html ./
 
 echo "---> Date customistaion starts here"
 
-DATE=`date"+%F"`
+DATE=`date="+%F"`
 
 echo "---> changed date format Dubai $DATE"  >> date.html
 
