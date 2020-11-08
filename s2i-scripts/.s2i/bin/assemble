@@ -12,7 +12,7 @@ config_s2i
 cp -rf/tmp/src/*.html ./
 
 echo "---> changing the date format"
-DATE=`date="+%F"`
+DATE=`date "+%F"`
 echo "---> creating the exam date html"
 echo "---> date from Dubai is $DATE"  >> ./info.html
 
