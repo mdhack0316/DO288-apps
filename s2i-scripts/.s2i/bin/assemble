@@ -10,16 +10,21 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-echo "---> Installing application source"
+cp -rf /tmp/src/*.html ./
 
-cp -Rf /tmp/src/*.html ./
+echo "---> Date customistaion starts here"
 
-echo "--> date customisation"
-DATE=`date +%F`
-echo " date is changed to $DATE " > ./info.html
+DATE=`date"+%F"`
+
+echo "---> changed date format Dubai $DATE"  >> date.html
 
 
-######## CUSTOMIZATION ENDS HERE ############
+
+
+
+
+
+########## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
