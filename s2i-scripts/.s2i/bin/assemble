@@ -16,7 +16,7 @@ echo "---> Date customistaion starts here"
 
 DATE=`date="+%F"`
 
-echo "---> changed date format Dubai $DATE"  >> date.html
+echo "---> changed new date format Dubai $DATE"  >> ./date.html
 
 
 
