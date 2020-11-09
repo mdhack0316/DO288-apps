@@ -10,7 +10,7 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-cp -rf /tmp/rhscl/*.html ./
+cp -rf /tmp/src/*.html ./
 
 echo "----> changing the date format "
 
