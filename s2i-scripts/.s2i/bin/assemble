@@ -9,13 +9,14 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-cp -rf/tmp/src/*.html ./
 
-echo "---> changing the date format"
+cp -rf /tmp/rhscl/*.html ./
+
+echo "----> changing the date format "
+
 DATE=`date "+%F"`
-echo "---> creating the exam date html"
-echo "---> date from Dubai is $DATE"  >> ./info.html
 
+echo "-----> Date is changed on 9th Nov $DATE" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
