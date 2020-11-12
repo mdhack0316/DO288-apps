@@ -9,10 +9,9 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-
 cp -rf /tmp/src/*.html ./
 DATE=`date "+%F"`
-echo "----------> From Dubai date is $DATE" >> ./info.html
+echo "----------->  Date change from Dubai $DATE" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
